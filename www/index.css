@@ -1,0 +1,126 @@
+body{
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ffe5d9;
+    color: #9d8189;
+    padding: 0;
+    margin: 0;
+}
+
+ul,li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#app{
+    min-height: 80dvh;
+    max-width: 100dvw;
+}
+
+.text-xs{
+    font-size: 0.4rem;
+}
+
+
+.text-sm{
+    font-size: 0.7rem;
+}
+
+.text-md{
+    font-size: 0.9rem;
+}
+
+.text-lg{
+    font-size: 1.5rem;
+}
+
+.app-title{
+    font-size: 1.3rem;
+    padding: 5px 0;
+    margin: 0;
+}
+
+.header-container{
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #f4acb7;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
+    border-top: 1px solid #f4acb7;
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+}
+
+.add-task-form{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-ele{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.form-ele>label{
+    font-size: smaller;
+}
+
+.btn{
+    padding: 4px 5px;
+    background-color: #f4acb7;
+    color: #ffe5d9;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+}
+
+.todo-list-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+.todo-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    justify-items: start;
+    width: 70dvw;
+    padding: 20px;
+    /* background-color:white; */
+}
+
+.task{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 3px 0;
+}
+
+.delete-btn{
+    background-color: #ff5b5b;
+    color: #ffe5d9;
+    padding: 4px 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.completed{
+    opacity: 0.6;
+    text-decoration: line-through;
+}

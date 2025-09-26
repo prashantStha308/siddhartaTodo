@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header class="header-container" >
+        <p class="app-title" > Todo </p>
+    </header>
+
+    <main id="app">
+        <section class="form-container">
+            <form class="add-task-form" onsubmit="handleAddTask(event)" >
+                <div class="form-ele" >
+                    <label for="taskName"> Name your task </label>
+                    <input type="text" name="taskName" id="taskName" required >
+                </div>
+                <button class="btn" type="submit"> Add Task </button>
+            </form>
+        </section>
+        
+        <section class="todo-list-container">
+            <p class="text-md" > Your Tasks </p>
+            <ul class="todo-list" id="list" >
+                <!-- Tasks will be generated here -->
+            </ul>
+        </section>
+
+
+    </main>
+
+    <footer class="footer-container text-sm" >
+        App Created by Prashant Shrestha &copy;
+    </footer>
+
+
+    <script src="./index.js"></script>
+
+</body>
+</html>
