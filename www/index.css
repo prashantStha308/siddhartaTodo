@@ -74,12 +74,11 @@ ul,li{
     gap: 2px;
 }
 
-.form-ele>input{
-    padding: 2px 4px;
+.text-input{
+    padding: 6px 10px;
     outline: none;
     border: none;
     color: #9d8189;
-    font-size: 1.1rem;
 }
 
 .btn{
