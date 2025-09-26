@@ -3,52 +3,44 @@ name: Build Android APK
 on:
   push:
     branches:
-      - main   # or whichever branch you use
-  workflow_dispatch:   # allows manual trigger
+      - main
+  workflow_dispatch: 
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      # 1️⃣ Checkout the repo
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # 2️⃣ Setup Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '22'
 
-      # 3️⃣ Install Node dependencies
       - name: Install dependencies
         run: npm install
 
-      # 4️⃣ Add Capacitor Android plugin (if not already added)
       - name: Setup Capacitor Android
         run: |
           npm install @capacitor/android
           npx cap add android || echo "Android already added"
 
-      # 5️⃣ Sync Capacitor
       - name: Sync Capacitor
         run: npx cap sync android
 
-      # 6️⃣ Setup Java for Gradle
       - name: Setup JDK
         uses: actions/setup-java@v3
         with:
           distribution: 'temurin'
           java-version: '21'
 
-      # 7️⃣ Build the APK
       - name: Build APK
         run: |
           cd android
           ./gradlew assembleDebug
-
-      # 8️⃣ Upload APK as artifact
+          
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:

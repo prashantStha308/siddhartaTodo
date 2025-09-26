@@ -30,17 +30,17 @@ ul,li{
 }
 
 .text-md{
-    font-size: 0.9rem;
-}
-
-.text-lg{
     font-size: 1.5rem;
 }
 
+.text-lg{
+    font-size: 2rem;
+}
+
 .app-title{
-    font-size: 1.3rem;
-    padding: 5px 0;
+    padding: 10px 0;
     margin: 0;
+    font-weight: bold;
 }
 
 .header-container{
@@ -65,7 +65,7 @@ ul,li{
     padding: 10px;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 20px;
 }
 
 .form-ele{
@@ -74,8 +74,12 @@ ul,li{
     gap: 2px;
 }
 
-.form-ele>label{
-    font-size: smaller;
+.form-ele>input{
+    padding: 2px 4px;
+    outline: none;
+    border: none;
+    color: #9d8189;
+    font-size: 1.1rem;
 }
 
 .btn{
@@ -85,6 +89,7 @@ ul,li{
     font-weight: bold;
     border: none;
     border-radius: 10px;
+    font-size: 1.2rem;
 }
 
 .todo-list-container{
@@ -101,7 +106,6 @@ ul,li{
     justify-items: start;
     width: 70dvw;
     padding: 20px;
-    /* background-color:white; */
 }
 
 .task{
@@ -118,6 +122,7 @@ ul,li{
     padding: 4px 10px;
     border: none;
     border-radius: 5px;
+    font-size: 1.4rem;
 }
 
 .completed{
