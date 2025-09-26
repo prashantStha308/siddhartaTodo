@@ -29,22 +29,6 @@ function updateList() {
     saveTasks();
 }
 
-function toggleCompleteStatus(id) {
-    targetTask = tasks.find(task => task.id == id);
-    targetTask.completed = !targetTask.completed;
-
-    updateList();
-}
-
-function deleteTask(id) {
-
-    tasks = tasks.filter(task => task.id !== id);
-    console.log(tasks);
-    
-    updateList();
-}
-
-
 function createListElement(newTask) {
 
     const list = document.createElement('li');
@@ -74,6 +58,21 @@ function createListElement(newTask) {
     list.appendChild(deleteButton);
 
     return list;
+}
+
+function toggleCompleteStatus(id) {
+    const targetTask = tasks.find(task => task.id == id);
+    targetTask.completed = !targetTask.completed;
+
+    updateList();
+}
+
+function deleteTask(id) {
+
+    tasks = tasks.filter(task => task.id !== id);
+    console.log(tasks);
+    
+    updateList();
 }
 
 function saveTasks() {

@@ -82,7 +82,7 @@ ul,li{
 }
 
 .btn{
-    padding: 4px 5px;
+    padding: 8px 16px;
     background-color: #f4acb7;
     color: #ffe5d9;
     font-weight: bold;
@@ -102,7 +102,6 @@ ul,li{
     display: flex;
     flex-direction: column;
     justify-content: start;
-    justify-items: start;
     width: 70dvw;
     padding: 20px;
 }

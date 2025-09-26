@@ -1,0 +1,128 @@
+Concepts used:
+- HTML 
+    Defination, fullforms and use cases
+    Tags:
+        html:
+            head:
+                title
+                link: for css
+            body:
+                header
+                p
+                section
+                form
+                    label
+                    input
+                button
+                ul
+                li
+                footer
+
+- CSS
+    Defination, fullforms and use cases
+    CSS selectors:
+        element,
+        class,
+        id,
+
+    The Box Model:
+        Border,
+        Padding,
+        Margin,
+
+    Css Units:
+        px: static,
+        rem: relational,
+        dvh, dvw: dynamic viewport height/width ,
+
+    Css Properties:
+        width, min-width,
+        height, min-height,
+        Flex box:
+            display: flex,
+            flex-direction,
+            justify-content,
+            align-items,
+            gap
+        text:
+            font-size
+            font-weight
+            color
+        spacing:
+            border:
+                border,
+                border-radius
+            padding,
+            margin
+        Decoration:
+            background-color,
+            oopacity,
+            text-decoration,
+            list-style
+
+- JavaScript:
+    Programming Basics with JS:
+        Variables: let, var, const
+
+        Operators:
+            Assignment: =
+            Equality operator (loose equality): ==
+            Strict equality operator: ===
+            Logical NOT operator: !
+            pre increment: ++var
+            post increment: var++
+
+        Arrays: []
+        Objects: {}
+
+        Objects:{
+            Properties,
+            Methods
+        }
+
+        Array of Objects( since this is being mainly used for storing tasks ): [{}]
+
+        loops:
+            for
+            while
+            do...while
+        
+        function: only function statement, no expression types
+
+    HOF(Higher Order Functions):
+        forEach,
+        filter,
+        find
+    
+    DOM(Document Object Model):
+        What is DOM and it's relevency?
+        How to manipulate DOM with JavaScript?
+        Introduce document.getElementById(); (Since only this is used for capturing elements)
+        
+        DOM Element's Properties:
+            textContent,
+            classList
+        DOM Element's Methods:
+            classList.add()
+            addEventListener()
+            appendChild()
+    Storage:
+        LocalStorage:
+            What is LocalStorage?
+            When used?
+
+Capacitor
+    Installing Capacitor
+    Adding Android plugin
+
+Github:
+    git add
+    git commit -m ""
+    git push
+
+    Github Actions:
+        create .github folder
+        create .github/workflows/build-android.yaml
+
+        DON"T EXPLAIN .yaml (too complex for them... would be better to avoid this at all, but not possible)
+        Get .apk in Github Action Artifacts
