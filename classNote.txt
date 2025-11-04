@@ -61,6 +61,9 @@ Concepts used:
             list-style
 
 - JavaScript:
+    Installing Node.
+    Brief about node.
+
     Programming Basics with JS:
         Variables: let, var, const
 
@@ -109,9 +112,10 @@ Concepts used:
     Storage:
         LocalStorage:
             What is LocalStorage?
-            When used?
 
 Capacitor
+    What is Capacitor?
+    Brief about NPM(Node Package Manager)
     Installing Capacitor
     Adding Android plugin
 
